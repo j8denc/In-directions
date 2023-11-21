@@ -1,0 +1,379 @@
+/* Reset CSS */
+html, body {
+  font-family: cursed;
+  font-size: 25px;
+  background: #fff;
+  color: #FF0000;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:hover, a:active, button, input, label {
+  cursor: pointer;
+  color: Black;
+  text-decoration: none;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: s-resize;
+  /* cursor: none;
+  user-select: none; */
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  position: absolute;
+  left: 4vmax;
+  width: 12vmax;
+  text-align: center;
+  line-height: 12vmax;
+  font-family: sans-serif;
+  font-size: 2.5vmax;
+  height: 12vmax;
+  transform-origin: center center;
+  /* pointer-events: none; */
+}
+
+.name a{
+  pointer-events: auto;
+}
+
+.info {
+  z-index: 99;
+  pointer-events: none;
+  position: absolute;
+  right: 0vw;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5vmax;
+  width: 12vmax;
+  line-height: 12vmax;
+  top: 12vmax;
+  right: 5vmax;
+  transform-origin: center center;
+}
+
+.info a {
+  pointer-events: auto;
+}
+
+.description {
+  position: absolute;
+  left: 0vw;
+  bottom: 0;
+  width: 100vmax;
+  text-align: center;
+  line-height: auto;
+  font-family: sans-serif;
+  font-size: 2.5vmax;
+  height: auto;
+  bottom: 5vmax;
+  transform-origin: center center;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.clock {
+  width: 100vmin;
+  height: 100vmin;
+  /* border: dashed 1px; */
+  border-radius: 50%;
+  position: fixed;
+  top: 6vmin;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.time {
+  line-height: 10vmin;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10vmin;
+  height: 10vmin;
+  margin: -5vmin;
+  transition: all 0.5s linear;
+}
+
+.time.active {
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.time img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  max-width: 125%;
+  max-height: 125%;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.time img.active {
+  max-width: 90vmax;
+  max-height: 90vmin;
+}
+
+.time:nth-child(1) {
+  transform: rotate(630deg) translate(46vmin);
+}
+
+.time:nth-child(2) {
+  transform: rotate(647.14deg) translate(46vmin);
+}
+
+.time:nth-child(3) {
+  transform: rotate(664.28deg) translate(46vmin);
+}
+
+.time:nth-child(4) {
+  transform: rotate(681.42deg) translate(46vmin);
+}
+
+.time:nth-child(5) {
+  transform: rotate(698.56deg) translate(46vmin);
+}
+
+.time:nth-child(6) {
+  transform: rotate(715.7deg) translate(46vmin);
+}
+
+.time:nth-child(7) {
+  transform: rotate(732.84deg) translate(46vmin);
+}
+
+.time:nth-child(8) {
+  transform: rotate(749.98deg) translate(46vmin);
+}
+
+.time:nth-child(9) {
+  transform: rotate(767.12deg) translate(46vmin);
+}
+
+.time:nth-child(10) {
+  transform: rotate(784.26deg) translate(46vmin);
+}
+
+.time:nth-child(11) {
+  transform: rotate(801.4deg) translate(46vmin);
+}
+
+.time:nth-child(12) {
+  transform: rotate(818.54deg) translate(46vmin);
+}
+
+.time:nth-child(13) {
+  transform: rotate(835.68deg) translate(46vmin);
+}
+
+.time:nth-child(14) {
+  transform: rotate(852.82deg) translate(46vmin);
+}
+
+.time:nth-child(15) {
+  transform: rotate(869.96deg) translate(46vmin);
+}
+
+.time:nth-child(16) {
+  transform: rotate(887.1deg) translate(46vmin);
+}
+
+.time:nth-child(17) {
+  transform: rotate(904.24deg) translate(46vmin);
+}
+
+.time:nth-child(18) {
+  transform: rotate(921.38deg) translate(46vmin);
+}
+
+.time:nth-child(19) {
+  transform: rotate(938.52deg) translate(46vmin);
+}
+
+.time:nth-child(20) {
+  transform: rotate(955.66deg) translate(46vmin);
+}
+
+.time:nth-child(21) {
+  transform: rotate(972.8deg) translate(46vmin);
+}
+
+.tab{
+  margin-right: 0vw;
+}
+
+#imprint {
+  cursor: pointer;
+}
+
+
+.infotext, .imprinttext {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin: auto;
+  width: 100vmax;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5vmax;
+  line-height: 2.5vmax;
+  height: 5vmax;
+  z-index: 99;
+  pointer-events: none;
+  transition: all 0.25s linear;
+  transform: rotateY(90deg) rotate(180deg);
+}
+
+.infotext{
+  line-height: 5vmax;
+}
+
+.infotext.active, .imprinttext.active {
+  transform: rotateY(0deg) rotate(360deg);
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .clock {
+    width: 80vmin;
+    height: 80vmin;
+    /* border: dashed 1px; */
+    border-radius: 50%;
+    position: fixed;
+    top: 6vmin;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .time:nth-child(1) {
+  transform: rotate(630deg) translate(46vmin);
+}
+
+.time:nth-child(2) {
+  transform: rotate(647.14deg) translate(46vmin);
+}
+
+.time:nth-child(3) {
+  transform: rotate(664.28deg) translate(46vmin);
+}
+
+.time:nth-child(4) {
+  transform: rotate(681.42deg) translate(46vmin);
+}
+
+.time:nth-child(5) {
+  transform: rotate(698.56deg) translate(46vmin);
+}
+
+.time:nth-child(6) {
+  transform: rotate(715.7deg) translate(46vmin);
+}
+
+.time:nth-child(7) {
+  transform: rotate(732.84deg) translate(46vmin);
+}
+
+.time:nth-child(8) {
+  transform: rotate(749.98deg) translate(46vmin);
+}
+
+.time:nth-child(9) {
+  transform: rotate(767.12deg) translate(46vmin);
+}
+
+.time:nth-child(10) {
+  transform: rotate(784.26deg) translate(46vmin);
+}
+
+.time:nth-child(11) {
+  transform: rotate(801.4deg) translate(46vmin);
+}
+
+.time:nth-child(12) {
+  transform: rotate(818.54deg) translate(46vmin);
+}
+
+.time:nth-child(13) {
+  transform: rotate(835.68deg) translate(46vmin);
+}
+
+.time:nth-child(14) {
+  transform: rotate(852.82deg) translate(46vmin);
+}
+
+.time:nth-child(15) {
+  transform: rotate(869.96deg) translate(46vmin);
+}
+
+.time:nth-child(16) {
+  transform: rotate(887.1deg) translate(46vmin);
+}
+
+.time:nth-child(17) {
+  transform: rotate(904.24deg) translate(46vmin);
+}
+
+.time:nth-child(18) {
+  transform: rotate(921.38deg) translate(46vmin);
+}
+
+.time:nth-child(19) {
+  transform: rotate(938.52deg) translate(46vmin);
+}
+
+.time:nth-child(20) {
+  transform: rotate(955.66deg) translate(46vmin);
+}
+
+.time:nth-child(21) {
+  transform: rotate(972.8deg) translate(46vmin);
+}
+  .time img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    max-width: 125%;
+    max-height: 125%;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+  .time img.active {
+    max-width: 98vmin;
+    max-height: 98vmax;
+  }
+  .infotext, .description, .imprinttext {
+    line-height: auto;
+    width: 100vmin;
+  }
+
+  .description{
+    display: none;
+
+  }
+}

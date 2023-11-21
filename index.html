@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="de"><head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+   <title>(IN)DIRECTIONS - Eli Klein Gallery</title>
+   <link rel="author" href="Eli Klein Gallery">
+   <meta name="description" content="(IN)DIRECTIONS">
+
+   <meta property="og:title" content="Eli Klein Gallery">
+   <meta property="og:image" content="images/preview.jpg">
+   <meta property="og:description" content="(IN)DIRECTIONS">
+
+   <link href="css/style.css" rel="stylesheet">
+   <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+ </head>
+
+ <body>
+
+    <script>
+
+      var data=[];
+      data[0]=new Array('https://img.artlogic.net/w_1800,h_1800,c_limit/exhibit-e/559aad566aa72c9c3d07911a/c8dc46bd0a19b572b6f0d44bdac7bbd2.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/400c3e2780032e9e0b58a8ac5d3392ba.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/2337ba3d2c6a6aad5be5a6cfbe1262af.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ed12f9592834b20fe3578731cf2c2dc3.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/f09f2c54e594c27cde6cebf5905f95d7.png','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/b584efa5cf60d92e83b9a5847746c393.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/452556c3cc80a10d2c9e0934b747da62.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/1f1c8cd9763eaef479e7c1d0e05bc55e.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/145839599fb6f4bc180f0e1a810ddc74.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/d9764dc5b17671869e20c973a19af64b.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ee546567c6622f47dea71b7948cfa34e.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/792820fc42e0248843ec6e66838ff51b.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/99b81f0508d7ff242d5131d27ebe804c.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/067a56786121d662f41786f15cd35b95.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/dd0cb6007f95f6f5ca14a66dc36a0e83.png','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/41d249322a206749e24b75adf84c3a7d.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/0e92dcdeb39f5903b52d1d1914e2d327.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/12f23e55d34055f07a5ba4cbb06aa209.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/b32d72c0ae0e52969476897372773b6d.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/a0bd5f6ae34be37bb21b72c18961708a.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/8201acd9ffab683c7fe8629c1d17d691.jpeg',);
+      data[1]=new Array('https://img.artlogic.net/w_1800,h_1800,c_limit/exhibit-e/559aad566aa72c9c3d07911a/c8dc46bd0a19b572b6f0d44bdac7bbd2.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/400c3e2780032e9e0b58a8ac5d3392ba.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/2337ba3d2c6a6aad5be5a6cfbe1262af.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ed12f9592834b20fe3578731cf2c2dc3.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/f09f2c54e594c27cde6cebf5905f95d7.png','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/b584efa5cf60d92e83b9a5847746c393.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/452556c3cc80a10d2c9e0934b747da62.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/1f1c8cd9763eaef479e7c1d0e05bc55e.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/145839599fb6f4bc180f0e1a810ddc74.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/d9764dc5b17671869e20c973a19af64b.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ee546567c6622f47dea71b7948cfa34e.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/792820fc42e0248843ec6e66838ff51b.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/99b81f0508d7ff242d5131d27ebe804c.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/067a56786121d662f41786f15cd35b95.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/dd0cb6007f95f6f5ca14a66dc36a0e83.png','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/41d249322a206749e24b75adf84c3a7d.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/0e92dcdeb39f5903b52d1d1914e2d327.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/12f23e55d34055f07a5ba4cbb06aa209.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/b32d72c0ae0e52969476897372773b6d.jpeg','https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/a0bd5f6ae34be37bb21b72c18961708a.jpeg','https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/8201acd9ffab683c7fe8629c1d17d691.jpeg',);
+      data[2]=new Array(' "My Jet Black Hair", Alec Dai, 2021', ' "Assembly I, Brooklyn", Tommy Kha, 2018', ' "Eddy", Mengwen Cao, 2021', ' "Daisies", Shen Wei, 2022', ' "Arisan", Leonard Suryajaya, 2017', ' "A Rino Labeled Gay #4", Kanthy Peng, 2019', ' "Sounds of a Sweat (Brooklyn)", Amiko Li, 2017', ' "Peach Pit", Chi Peng, 2015', ' "When The Chemistry Is Simplified", Lin Zhipeng (No.223), 2021', ' "The One [hongkong, 0000000-3876000]", Liao Jiaming, 2023', ' "Lumination", Zhang Zhidong, 2022', ' "Olly’s Birthday Party - 4.22.17, Los Angeles, CA", Ren Light Pan, 2017', ' "Untitled", Ren Hang, 2015', ' "Illumination", Xu Guanyu, 2014', ' "Long Sausage", Pixy Liao, 2016', ' "Washington, D.C.", Tseng Kwong Chi, 1982', ' "Untitled (Butterfly 2)", Fang Daqi, 2023', ' "Papaya", William Zou, 2022',' "Queeropometry", Whiskey Chow, 2022-2023',' "Symbolistic Father", Yang Bowei, 2017',' "BOI", Beatrix Pang, 2018',);
+      data[3]=new Array(true,false);
+
+    </script>
+
+   <div class="name"><a id="home">(IN)DIRECTIONS</a></div>
+   <div class="info"><a id="info">Info</a></div>
+
+   <div class="description"> </div>
+
+   <div class="infotext">
+    <a class="tab" href="https://www.instagram.com/elikleingallery/" target="_blank">Instagram</a>,<a class="tab" href="http://www.galleryek.com/exhibitions/in-directions-queerness-in-chinese-contemporary-photography" target="_blank">Exhibition</a>,<a id="imprint">Credits</a>
+   </div>
+
+   <div class="imprinttext">
+     All rights reserved Eli Klein Gallery<br><br>
+     Website: <a href="https://www.jadenchen.com" target="_blank">Jaden Chen</a>
+   </div>
+
+   <div class="clock">
+            <div class="time zwoelf">
+         <img src="images/AlecDai.jpeg" data-src="https://img.artlogic.net/w_1800,h_1800,c_limit/exhibit-e/559aad566aa72c9c3d07911a/c8dc46bd0a19b572b6f0d44bdac7bbd2.jpeg" alt="" Alex="" Dai="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/TommyKha.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/400c3e2780032e9e0b58a8ac5d3392ba.jpeg" alt="" Tommy="" Kha="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/MengwenCao.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/400c3e2780032e9e0b58a8ac5d3392ba.jpeg" alt="" Mengwen,="" Cao,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/ShenWei.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ed12f9592834b20fe3578731cf2c2dc3.jpeg" alt="" Shen,="" Wei,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/LeonardSuryajaya.png" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/f09f2c54e594c27cde6cebf5905f95d7.png" alt="" Leonard,="" Suryajaya,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/KanthyPeng.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/452556c3cc80a10d2c9e0934b747da62.jpeg" alt="" Kanthy,="" Peng,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/AmikoLi.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/452556c3cc80a10d2c9e0934b747da62.jpeg" alt="" Amiko,="" Li,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/Chipeng.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/1f1c8cd9763eaef479e7c1d0e05bc55e.jpeg" alt="" Chi,="" Peng,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/LinZhipeng.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/145839599fb6f4bc180f0e1a810ddc74.jpeg" alt="" Lin,="" Zhipeng,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/LiaoJiaming.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/d9764dc5b17671869e20c973a19af64b.jpeg" alt="" Liao,="" Jiaming,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/ZhangZhidong.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/ee546567c6622f47dea71b7948cfa34e.jpeg" alt="" Zhang,="" Zhidong,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/RenLightPan.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/792820fc42e0248843ec6e66838ff51b.jpeg" alt="" Ren,="" LightPan,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/RenHang.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/99b81f0508d7ff242d5131d27ebe804c.jpeg" alt="" Ren,="" Hang,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/XuGuanyu.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/792820fc42e0248843ec6e66838ff51b.jpeg" alt="" Xu,="" Guanyu,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/PixyLiao.png" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/dd0cb6007f95f6f5ca14a66dc36a0e83.png" alt="" Pixy,="" Liao,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/TsengKwongChi.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/41d249322a206749e24b75adf84c3a7d.jpeg" alt="" Tseng,="" KwongChi,="">
+       </div>
+          <div class="time zwoelf">
+         <img src="images/FangDaqi.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/0e92dcdeb39f5903b52d1d1914e2d327.jpeg" alt="" Tseng,="" KwongChi,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/WilliamZou.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/12f23e55d34055f07a5ba4cbb06aa209.jpeg" alt="" William,="" Zou,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/WhiskeyChow.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/b32d72c0ae0e52969476897372773b6d.jpeg" alt="" Whiskey,="" Chow,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/YangBowei.jpeg" data-src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/559aad566aa72c9c3d07911a/a0bd5f6ae34be37bb21b72c18961708a.jpeg" alt="" Yang,="" Bowei,="">
+       </div>
+            <div class="time zwoelf">
+         <img src="images/BeatrixPang.jpeg" data-src="https://img.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/559aad566aa72c9c3d07911a/8201acd9ffab683c7fe8629c1d17d691.jpeg" alt="" Beatrix,="" Pang,="">
+       </div>
+
+<!-- Points to an external JS file -->
+<script src="js/script.js" type="text/javascript"></script>
+
+
+
+</body></html>
